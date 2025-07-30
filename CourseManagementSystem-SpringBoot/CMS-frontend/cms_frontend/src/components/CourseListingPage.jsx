@@ -28,7 +28,7 @@ const CourseListingPage = () => {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },
         body: JSON.stringify({
-          userId: userId,
+          userId: Number(userId), // Ensure userId is sent as a number
           courseId: courseId,
           enrollmentDate: new Date().toISOString()
         })
