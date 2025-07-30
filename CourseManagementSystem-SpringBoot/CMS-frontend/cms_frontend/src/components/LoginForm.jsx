@@ -47,7 +47,8 @@ const LoginForm = () => {
         role: roleName
       };
 
-      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('userId', JSON.stringify(user));
+      
       if (data.token) localStorage.setItem('token', data.token);
 
       if (roleName === 'ROLE_ADMIN') {
