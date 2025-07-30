@@ -51,7 +51,7 @@ const CourseListingPage = () => {
   useEffect(() => {
     const storedUserId = localStorage.getItem('userId');
     if (storedUserId) {
-      setUserId(storedUserId);
+      setUserId(Number(storedUserId)); // Ensure userId is a number
     }
 
     fetch('https://cms-springboot.onrender.com/courses')
