@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/courses")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://cms-spring-boot-cc41-ten.vercel.app")
 public class CourseController {
 
     @Autowired

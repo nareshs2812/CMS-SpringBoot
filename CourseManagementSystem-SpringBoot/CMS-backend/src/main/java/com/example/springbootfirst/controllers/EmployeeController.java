@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://cms-spring-boot-cc41-ten.vercel.app")
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {

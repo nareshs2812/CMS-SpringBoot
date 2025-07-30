@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/enrollments")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://cms-spring-boot-cc41-ten.vercel.app")
 public class EnrollmentController {
 
     @Autowired
