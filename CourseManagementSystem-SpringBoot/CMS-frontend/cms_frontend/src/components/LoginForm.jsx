@@ -19,7 +19,7 @@ const LoginForm = () => {
     setError('');
 
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch('https://cms-springboot.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
