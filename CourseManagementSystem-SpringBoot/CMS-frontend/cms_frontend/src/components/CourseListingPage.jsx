@@ -21,7 +21,7 @@ const CourseListingPage = () => {
 
     setEnrolling(true);
     try {
-      const response = await fetch(`https://coursemanagementsystem-springboot.onrender.com/enrollments`, {
+      const response = await fetch(`https://cms-springboot.onrender.com/enrollments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const CourseListingPage = () => {
       setUserId(storedUserId);
     }
 
-    fetch('https://coursemanagementsystem-springboot.onrender.com/courses')
+    fetch('https://cms-springboot.onrender.com/courses')
       .then(response => {
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);

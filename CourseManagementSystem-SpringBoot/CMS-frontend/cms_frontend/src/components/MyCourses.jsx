@@ -12,7 +12,7 @@ const MyCourses = () => {
 
   const fetchEnrollments = () => {
     setLoading(true);
-    fetch(`https://coursemanagementsystem-springboot.onrender.com/enrollments/user/${userId}`, {
+    fetch(`https://cms-springboot.onrender.com/enrollments/user/${userId}`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -47,7 +47,7 @@ const MyCourses = () => {
   }, [userId, token]);
 
   const handleDelete = (enrollmentId) => {
-    fetch(`https://coursemanagementsystem-springboot.onrender.com/enrollments/${enrollmentId}`, {
+    fetch(`https://cms-springboot.onrender.com/enrollments/${enrollmentId}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${token}`,

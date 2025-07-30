@@ -13,7 +13,7 @@ const CourseDetails = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://coursemanagementsystem-springboot.onrender.com/courses/${courseId}`)
+    fetch(`https://cms-springboot.onrender.com/courses/${courseId}`)
       .then(response => {
         if (!response.ok) throw new Error(`Error: ${response.status}`);
         return response.json();
@@ -36,7 +36,7 @@ const CourseDetails = () => {
     }
 
     try {
-      const response = await fetch('https://coursemanagementsystem-springboot.onrender.com/enrollments', {
+      const response = await fetch('https://cms-springboot.onrender.com/enrollments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -38,7 +38,7 @@ const AddCourse = () => {
     };
 
     try {
-      const response = await fetch('https://coursemanagementsystem-springboot.onrender.com/courses', {
+      const response = await fetch('https://cms-springboot.onrender.com/courses', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

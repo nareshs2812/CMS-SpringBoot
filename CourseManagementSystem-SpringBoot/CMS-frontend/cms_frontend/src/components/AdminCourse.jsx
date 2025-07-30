@@ -16,7 +16,7 @@ const AdminCourses = () => {
 
   const fetchEnrollmentCount = async (courseId) => {
     try {
-      const response = await fetch(`https://coursemanagementsystem-springboot.onrender.com/enrollments/count/${courseId}`, {
+      const response = await fetch(`https://cms-springboot.onrender.com/enrollments/count/${courseId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const AdminCourses = () => {
   const fetchCourses = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`https://coursemanagementsystem-springboot.onrender.com/courses/createdBy/${userId}`, {
+      const response = await fetch(`https://cms-springboot.onrender.com/courses/createdBy/${userId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const AdminCourses = () => {
   };
 
   const handleDelete = (courseId) => {
-    fetch(`https://coursemanagementsystem-springboot.onrender.com/courses/${courseId}`, {
+    fetch(`https://cms-springboot.onrender.com/courses/${courseId}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -89,7 +89,7 @@ const AdminCourses = () => {
   };
 
   const handleUpdateSubmit = () => {
-    fetch(`https://coursemanagementsystem-springboot.onrender.com/courses/${editingCourse}`, {
+    fetch(`https://cms-springboot.onrender.com/courses/${editingCourse}`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${token}`,
